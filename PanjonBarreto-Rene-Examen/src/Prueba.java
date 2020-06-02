@@ -26,7 +26,7 @@ public class Prueba {
 	
 	
 	Capitulos capituloFin = new Capitulos(17,"Muere Romeo");
-	Autor autor = new Autor("William Sheakspear","Frances",capituloFin);
+	Autor autor = new Autor(1,"William Sheakspear","Frances",capituloFin);
 	
 	
 	

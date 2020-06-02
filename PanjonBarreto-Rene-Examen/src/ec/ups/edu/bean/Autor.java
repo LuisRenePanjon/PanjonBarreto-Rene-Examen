@@ -15,7 +15,6 @@ public class Autor implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@GeneratedValue
 	private int codigo;
 	
 	private String nombre;
