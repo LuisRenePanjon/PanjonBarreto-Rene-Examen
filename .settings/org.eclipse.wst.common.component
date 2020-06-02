@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="PanjonBarreto-Rene-Examen">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/PanjonBarreto-Rene-Examen/src"/>
+        <property name="context-root" value="PanjonBarreto-Rene-Examen"/>
+        <property name="java-output-path" value="/PanjonBarreto-Rene-Examen/PanjonBarreto-Rene-Examen/build/classes"/>
+    </wb-module>
+</project-modules>
