@@ -15,6 +15,7 @@ public class Autor implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
+	@GeneratedValue
 	private int codigo;
 	
 	private String nombre;
@@ -29,12 +30,15 @@ public class Autor implements Serializable {
 		super();
 	}
 
-	public Autor(int codigo, String nombre, String nacionalidad) {
+	
+
+	public Autor(String nombre, String nacionalidad) {
 		super();
-		this.codigo = codigo;
 		this.nombre = nombre;
 		this.nacionalidad = nacionalidad;
 	}
+
+
 
 	public Autor(int codigo, String nombre, String nacionalidad, Capitulos capitulos) {
 		super();

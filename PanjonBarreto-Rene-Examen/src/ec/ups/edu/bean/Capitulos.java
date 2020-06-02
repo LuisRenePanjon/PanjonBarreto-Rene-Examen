@@ -14,6 +14,7 @@ public class Capitulos implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@GeneratedValue
 	private int codigo;
 	
 	private int numero;
@@ -27,9 +28,9 @@ public class Capitulos implements Serializable {
 	@OneToOne(cascade = CascadeType.ALL, mappedBy = "capitulos")
 	private Autor autor;
 	
-	public Capitulos(int codigo, int numero, String titulo) {
+	
+	public Capitulos(int numero, String titulo) {
 		super();
-		this.codigo = codigo;
 		this.numero = numero;
 		this.titulo = titulo;
 	}
