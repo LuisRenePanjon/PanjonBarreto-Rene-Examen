@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import ec.ups.edu.bean.Autor;
+import ec.ups.edu.bean.Capitulos;
 import ec.ups.edu.dao.AutorDAO;
 import ec.ups.edu.dao.CapitulosDAO;
 import ec.ups.edu.dao.DAOFactory;
@@ -35,7 +37,10 @@ public class CrearLibro extends HttpServlet {
 		
 		Autor autor = autorDAO.read(Integer.parseInt(codigoautor));
 		
+		Capitulos capitulos = new Capitulos(numcap,nombrecap);
 		
+		
+		autor.setCapitulos(capitulos);
 		
 		
 		
