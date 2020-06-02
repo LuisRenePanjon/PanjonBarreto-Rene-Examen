@@ -7,6 +7,9 @@
 	
 	<persistence-unit name="Examen" transaction-type="RESOURCE_LOCAL">
 	<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+	<class>ec.ups.edu.bean.Libro</class>
+	<class>ec.ups.edu.bean.Capitulos</class>
+	<class>ec.ups.edu.bean.Autor</class>
 	<properties>
 		<property name="eclipselink.ddl-generation" value="create-tables"/>
 		<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpa"/>
