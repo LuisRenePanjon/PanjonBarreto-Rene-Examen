@@ -39,6 +39,16 @@ public class Autor implements Serializable {
 	}
 
 
+	
+
+	public Autor(String nombre, String nacionalidad, Capitulos capitulos) {
+		super();
+		this.nombre = nombre;
+		this.nacionalidad = nacionalidad;
+		this.capitulos = capitulos;
+	}
+
+
 
 	public Autor(int codigo, String nombre, String nacionalidad, Capitulos capitulos) {
 		super();

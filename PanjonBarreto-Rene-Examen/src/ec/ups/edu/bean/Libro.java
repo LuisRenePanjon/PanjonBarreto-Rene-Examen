@@ -81,6 +81,15 @@ public class Libro implements Serializable {
 		this.numPaginas = numPaginas;
 	}
 
+	
+	public void addCapitulo(Capitulos capitulos) {
+		this.listaCapitulos.add(capitulos);
+	}
+	
+	public void removeCapitulo (Capitulos capitulo) {
+		this.listaCapitulos.remove(capitulo);
+	}
+	
 	public Set<Capitulos> getListaCapitulos() {
 		return listaCapitulos;
 	}
@@ -91,6 +100,8 @@ public class Libro implements Serializable {
 		this.listaCapitulos = listaCapitulos;
 	}
 
+	
+	
 
 
 	@Override
